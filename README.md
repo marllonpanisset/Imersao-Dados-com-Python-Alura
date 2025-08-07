@@ -9,7 +9,7 @@ Repositório com os conteúdos práticos da Imersão em Dados usando Python. Cad
 | Aula | Título                          | Link para Conteúdo |
 |------|----------------------------------|---------------------|
 | 01   | Explore Dados com Pandas         | [📂 Aula_01](./Aula_01/) |
-| 02   | *[em breve]*                     | *Aula_02* |
+| 02   | Aprenda a Limpar e Preparar os Dados                     | [📂 Aula_02](./Aula_02/) |
 | 03   | *[em breve]*                     | *Aula_03* |
 
 > 📅 Novas aulas serão adicionadas diariamente.
