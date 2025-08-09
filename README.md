@@ -1,7 +1,10 @@
 # 🚀 Imersão em Dados com Python
 
-Repositório com os conteúdos práticos da Imersão em Dados usando Python. Cada aula traz notebooks interativos, scripts em Python e explicações para te ajudar a dominar análise de dados de forma descomplicada.
+Nesse Repositório voce pode encontrar  os conteúdos práticos da Imersão Dados com Python. Cada aula traz notebooks interativos, scripts em Python e explicações para te ajudar a dominar análise de dados de forma descomplicada.
 
+## Projeto Final
+
+O projeto final do curso criei um Dashboard Interativo com python consumindo dados de um arquivo CSV. Se voce quiser ver o projeto funcionando [clique aqui ]()
 ---
 
 ## 📚 Índice de Aulas
@@ -11,8 +14,8 @@ Repositório com os conteúdos práticos da Imersão em Dados usando Python. Cad
 | 01   | Explore Dados com Pandas         | [📂 Aula_01](./Aula_01/) |
 | 02   | Aprenda a Limpar e Preparar os Dados                     | [📂 Aula_02](./Aula_02/) |
 | 03   | Crie Gráficos e conte histórias com Dados                     | [📂 Aula_03](./Aula_03/) |
+| 04   | Construa um Dashboard interativo                     | [📂 Aula_04](./Aula_04/) |
 
-> 📅 Novas aulas serão adicionadas diariamente.
 
 ---
 

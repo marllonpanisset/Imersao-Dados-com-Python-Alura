@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # --- Carregamento dos dados ---
-df = pd.read_csv('./dados-imersao-final.csv')
+df = pd.read_csv("https://raw.githubusercontent.com/marllonpanisset/Imersao-Dados-com-Python-Alura/refs/heads/main/Aula_04/dados-imersao-final.csv")
 
 # --- Barra Lateral (Filtros) ---
 st.sidebar.header("🔍 Filtros")
@@ -136,27 +136,3 @@ with col_graf4:
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
 st.dataframe(df_filtrado)
-
-import pycountry
-
-# Função para converter ISO-2 para ISO-3
-def iso2_to_iso3(code):
-    try:
-        return pycountry.countries.get(alpha_2=code).alpha_3
-    except:
-        return None
-
-# Criar nova coluna com código ISO-3
-df_limpo['residencia_iso3'] = df_limpo['residencia'].apply(iso2_to_iso3)
-
-# Calcular média salarial por país (ISO-3)
-df_ds = df_limpo[df_limpo['cargo'] == 'Data Scientist']
-media_ds_pais = df_ds.groupby('residencia_iso3')['usd'].mean().reset_index()
-
-# Gerar o mapa
-fig = px.choropleth(media_ds_pais,
-    locations='residencia_iso3',
-    color='usd',
-    color_continuous_scale='rdylgn',
-    title='Salário médio de Cientista de Dados por país',
-    labels={'usd': 'Salário médio (USD)', 'residencia_iso3': 'País'})
